@@ -1,0 +1,28 @@
+<ion-view title="Remove filters" cache-view="false">
+    <ion-nav-bar>
+      <ion-nav-buttons side="left">
+       <!-- Toggle left side menu -->
+       <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+      </ion-nav-buttons>
+
+    </ion-nav-bar>
+
+    <ion-header-bar class="bar-subheader">
+        <div class="buttons">
+            <button class="button button-icon icon ion-ios-minus-outline"
+            myclick="data.showDelete = !data.showDelete; data.showReorder = false"></button>
+        </div>
+
+        <!-- <h3 class="title" id='settings-title'></h3> -->
+    </ion-header-bar>
+
+	<ion-content class="padding content-main">
+        <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
+           <ion-item ng-repeat="keyword in saved_keywords" item="keyword" class="item-remove-animate" >
+               {{ keyword }}
+             <ion-delete-button class="ion-minus-circled" side="right" myclick="onItemDelete(keyword)">
+             </ion-delete-button>
+           </ion-item>
+         </ion-list>
+	</ion-content>
+</ion-view>

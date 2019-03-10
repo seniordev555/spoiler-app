@@ -1,0 +1,161 @@
+/*
+Custom Styles for the Heads Up Emergency Alert Application
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+
+// Color Vars
+$red: #ff3333;
+$red-op: rgba(255,51,51,0.5);
+
+
+// Intro/Login Page
+
+.login {
+  background-color: $red;
+}
+
+.intro-icon__container {
+  background-color: $red;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.intro-start {
+  color: #fff !important;
+  font-size: 2em;
+}
+
+//  Main feed page
+
+.content-main {
+  background-color: $red-op;
+}
+
+// Custom classes to force override issues with collection-repeat
+.item-input {
+  padding: 0;
+  border: none;
+}
+
+
+.filler {
+  display: block;
+  padding: 40px 0;
+}
+
+// Sassified jon's existing styles.
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+  &.ng-hide {
+    line-height: 0px;
+  }
+  &.ng-hide-add, &.ng-hide-remove {
+    display: block !important;
+  }
+}
+
+#settings-title {
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center;
+}
+
+
+//  We need this for android's enforcement of the Content-Security-Policy
+//  which by default affect angular's way of loading things
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+.ng-animate-shim {
+  visibility:hidden;
+}
+
+.ng-anchor {
+  position:absolute;
+}
+
+
+
+// Intro Tutorial Classes
+.slider {
+  height: 100%;
+}
+.page-1 {
+  background: url(../img/slide-1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.page-2 {
+  background: url(../img/slide-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.page-3 {
+  background: url(../img/slide-3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.page-4 {
+  background: url(../img/slide-4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.page-5 {
+  background: url(../img/slide-5.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.page-6 {
+  background: url(../img/slide-6.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.page-7 {
+  background: url(../img/slide-7.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.page-8 {
+  background: url(../img/slide-8.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.start-app {
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  top: 80%;
+  left: 43%;
+}
